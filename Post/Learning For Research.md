@@ -1,5 +1,5 @@
 ---
-tags: [thoughts]
+tags: [thoughts, philosophy, cognition]
 ---
 
 Scientific breakthroughs require research. Research at its core is sifting through information that already exists in order to make connections that haven't previously been made. And if you're lucky, you make enough of these connections to be able to perceive things differently in such a way so as to probe the unknown of reality with more effectiveness.

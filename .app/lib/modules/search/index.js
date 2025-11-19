@@ -7,10 +7,11 @@ module.exports = {
    */
   setup(config) {
     config.on("eleventy.after", async ({ dir, runMode }) => {
-      const isBuild = runMode === "build";
-      isBuild
-        ? await this._createIndex(dir.output)
-        : this._createIndex(dir.output);
+      try {
+        await this._createIndex(dir.output);
+      } catch (error) {
+        console.warn(`[Search] Failed to create search index:`, error.message);
+      }
     });
   },
 };

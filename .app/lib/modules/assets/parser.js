@@ -24,15 +24,27 @@ module.exports = async function transformParser(content) {
 
   await Promise.all(
     elements.map(async (img) => {
-      const src = img.attribs.src;
+      try {
+        const src = img.attribs.src;
+        if (!src || !isRelative(src) || !isImageFile(src)) return;
+        const paths = await buildPaths(templateDir, outputDir, src);
+        // Check if source file exists before processing
+        if (!fs.existsSync(paths.sourcePath)) {
+          console.warn(`[Assets] Image not found: ${paths.sourcePath} (referenced in ${inputPath})`);
+          return;
+        }
 
-      if (!isRelative(src) || !isImageFile(src)) return;
+        $(img).attr("src", paths.newSrc);
 
-      const paths = await buildPaths(templateDir, outputDir, src);
-      $(img).attr("src", paths.newSrc);
-
-      fs.mkdirSync(paths.destDir, { recursive: true });
-      await fs.promises.copyFile(paths.sourcePath, paths.destPath);
+        try {
+          fs.mkdirSync(paths.destDir, { recursive: true });
+          await fs.promises.copyFile(paths.sourcePath, paths.destPath);
+        } catch (copyError) {
+          console.warn(`[Assets] Failed to copy image ${paths.sourcePath} to ${paths.destPath}:`, copyError.message);
+        }
+      } catch (error) {
+        console.warn(`[Assets] Error processing image in ${inputPath}:`, error.message);
+      }
     })
   );
 
@@ -51,10 +63,15 @@ async function buildPaths(templateDir, outputDir, src) {
   let relativeDestPath = path.join("./", assetSubdir, assetBasename);
 
   if (isProduction) {
-    const hash = await hashFile(assetPath);
-    destDir = outputDir;
-    destPath = path.join(destDir, hash + ext);
-    relativeDestPath = `./${hash + ext}`;
+    try {
+      const hash = await hashFile(assetPath);
+      destDir = outputDir;
+      destPath = path.join(destDir, hash + ext);
+      relativeDestPath = `./${hash + ext}`;
+    } catch (error) {
+      // If hashing fails, fall back to non-hashed path
+      console.warn(`[Assets] Failed to hash file ${assetPath}, using original name:`, error.message);
+    }
   }
 
   return {
@@ -68,9 +85,17 @@ async function buildPaths(templateDir, outputDir, src) {
 
 function hashFile(filename) {
   return new Promise((resolve, reject) => {
+    // Check if file exists before attempting to read
+    if (!fs.existsSync(filename)) {
+      return reject(new Error(`File not found: ${filename}`));
+    }
+
     let shasum = crypto.createHash("sha1");
     try {
       let s = fs.ReadStream(filename);
+      s.on("error", function (error) {
+        return reject(error);
+      });
       s.on("data", function (data) {
         shasum.update(data);
       });

@@ -6,6 +6,7 @@ I've come to enjoy reading translated Japanese literature ever since reading _Da
 
 Authors:
 - Naoya Shiga (志賀 直哉)
+- Santōka Taneda (種田 山頭火)
 
 Manga Artists:
 - Osamu Tezuka (手塚 治虫)

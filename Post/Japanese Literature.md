@@ -13,3 +13,4 @@ Manga Artists:
 - Shotaro Ishinomori (石ノ森 章太郎)
 
 Books:
+- Until the Death of the Girl

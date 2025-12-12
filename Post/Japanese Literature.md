@@ -9,6 +9,7 @@ Authors:
 - Santōka Taneda (種田山頭火)
 - Murō Saisei (室生犀星)
 - Kafū Nagai (永井荷風)
+- Jun'ichirō Tanizaki
 
 Manga Artists:
 - Osamu Tezuka (手塚治虫)

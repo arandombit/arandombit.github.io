@@ -8,7 +8,7 @@ Authors:
 - Naoya Shiga (志賀直哉)
 - Santōka Taneda (種田山頭火)
 - Murō Saisei (室生犀星)
-- Kafū Nagai
+- Kafū Nagai (永井荷風)
 
 Manga Artists:
 - Osamu Tezuka (手塚治虫)

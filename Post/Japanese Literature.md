@@ -10,7 +10,7 @@ Authors:
 - Murō Saisei (室生犀星)
 - Kafū Nagai (永井荷風)
 - Jun'ichirō Tanizaki (谷崎潤一郎)
-- Shūji Tsushima (津島修治) (known by his pen name Osamu Dazai)
+- Shūji Tsushima (津島修治) (known by his pen name Osamu Dazai (太宰治))
 
 Manga Artists:
 - Osamu Tezuka (手塚治虫)

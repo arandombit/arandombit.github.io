@@ -11,6 +11,7 @@ Authors:
 - Kafū Nagai (永井荷風)
 - Jun'ichirō Tanizaki (谷崎潤一郎)
 - Shūji Tsushima (津島修治) (known by his pen name Osamu Dazai (太宰治))
+- Haruo Satō
 
 Manga Artists:
 - Osamu Tezuka (手塚治虫)

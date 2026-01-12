@@ -23,3 +23,4 @@ Manga Artists:
 
 Books:
 - Until the Death of the Girl (或る少女の死まで)
+- The Confession of a Husband

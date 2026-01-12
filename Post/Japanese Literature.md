@@ -15,7 +15,7 @@ Authors:
 - Ryūnosuke Akutagawa (芥川 龍之介)
 - Kōji Uno (宇野 浩二)
 - Motojirō Kajii (梶井基次郎)
-- Naoe Kinoshita
+- Naoe Kinoshita (木下尚江)
 
 Manga Artists:
 - Osamu Tezuka (手塚治虫)

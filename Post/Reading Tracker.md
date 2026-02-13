@@ -7,3 +7,5 @@ I love reading and tracking things helps motivate me to do more of them. So I'm 
 ### 2026
 
 ### Papers
+
+### Books

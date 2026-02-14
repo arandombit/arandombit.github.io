@@ -9,3 +9,5 @@ I love reading and tracking things helps motivate me to do more of them. So I'm 
 ### Papers
 
 ### Books
+
+1. The Great Gatsby by F. Scott Fitzgerald (January 1st)

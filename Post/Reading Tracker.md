@@ -11,3 +11,4 @@ I love reading and tracking things helps motivate me to do more of them. So I'm 
 ### Books
 
 1. The Great Gatsby by F. Scott Fitzgerald (January 1st)
+2. Flowers For Algernon by Daniel Keyes (February 7th)

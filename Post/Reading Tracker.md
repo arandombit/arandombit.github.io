@@ -16,3 +16,4 @@ I love reading and tracking things helps motivate me to do more of them. So I'm 
 4. A Hundred Years and a Day by Tomoka Shibasaki (March 14th)
 5. More Days at the Morisaki Bookshop by Satoshi Yagisawa (May 22)
 6. The Long Utopia by Terry Pratchett & Stephen Baxter (June 17)
+7. The Machine Stops by E. M. Forster (July 11)
